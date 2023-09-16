@@ -8,7 +8,7 @@ import java.util.List;
 @Getter
 @Builder
 public class Method {
-    private int order;
+    private Integer order;
     private String name;
     private List<Integer> params;
 }

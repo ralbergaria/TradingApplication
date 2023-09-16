@@ -5,11 +5,13 @@ import lombok.Getter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
 @Getter
 @Builder
 @Document(collection = "signals")
 public class Signal {
     @Id
     private Integer id;
-    private SignalProcess signalProcess;
+    private List<Method> methods;
 }
