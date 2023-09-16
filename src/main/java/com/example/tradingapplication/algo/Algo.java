@@ -1,4 +1,4 @@
-package com.example.tradeapplication.algo;
+package com.example.tradingapplication.algo;
 
 import org.springframework.stereotype.Component;
 

@@ -1,7 +1,7 @@
-package com.example.tradeapplication.service;
+package com.example.tradingapplication.service;
 
-import com.example.tradeapplication.algo.Algo;
-import com.example.tradeapplication.algo.SignalHandler;
+import com.example.tradingapplication.algo.Algo;
+import com.example.tradingapplication.algo.SignalHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

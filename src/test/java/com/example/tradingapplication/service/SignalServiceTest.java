@@ -1,6 +1,6 @@
-package com.example.tradeapplication.service;
+package com.example.tradingapplication.service;
 
-import com.example.tradeapplication.algo.Algo;
+import com.example.tradingapplication.algo.Algo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;

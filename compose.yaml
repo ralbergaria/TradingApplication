@@ -1,9 +1,9 @@
 services:
   mongodb:
-    image: 'mongo:latest'
+    image: 'mongo:7.0.1'
     environment:
       - 'MONGO_INITDB_DATABASE=trading_application'
       - 'MONGO_INITDB_ROOT_PASSWORD=secret'
       - 'MONGO_INITDB_ROOT_USERNAME=root'
     ports:
-      - '27017'
+      - '27017:27017'
