@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Comparator;
+import java.util.List;
 import java.util.Optional;
 
 import static org.apache.commons.collections4.CollectionUtils.isNotEmpty;
@@ -31,6 +32,10 @@ public class SignalService implements SignalHandler {
             algo.cancelTrades();
         }
         algo.doAlgo();
+    }
+
+    public void createSignals(List<Signal> signals) {
+        signalRepository.saveAll(signals);
     }
 
     private void processSignal(Signal signal) {
