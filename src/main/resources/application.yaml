@@ -6,3 +6,7 @@ spring:
       database: trading_application
       username: root
       password: secret
+app:
+  http:
+    auth-token-header-name: X-API-Key
+    auth-token: 109353c6-6432-4acf-8e77-ef842f64a664

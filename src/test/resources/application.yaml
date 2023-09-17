@@ -1,1 +1,5 @@
 de.flapdoodle.mongodb.embedded.version: 5.0.5
+app:
+  http:
+    auth-token-header-name: X-API-Key
+    auth-token: test

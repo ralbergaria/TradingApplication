@@ -7,6 +7,7 @@ import com.example.tradingapplication.model.Signal;
 import com.example.tradingapplication.repository.SignalRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -34,6 +35,7 @@ public class SignalService implements SignalHandler {
         algo.doAlgo();
     }
 
+    @Transactional
     public void createSignals(List<Signal> signals) {
         signalRepository.saveAll(signals);
     }
