@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "methods": [
+      {
+        "order": 0,
+        "name": "setUp"
+      },
+      {
+        "order": 1,
+        "name": "setAlgoParam",
+        "params": [
+          1,
+          60
+        ]
+      },
+      {
+        "order": 2,
+        "name": "performCalc"
+      },
+      {
+        "order": 3,
+        "name": "submitToMarket"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "methods": [
+      {
+        "order": 0,
+        "name": "reverse"
+      },
+      {
+        "order": 1,
+        "name": "setAlgoParam",
+        "params": [
+          1,
+          90
+        ]
+      },
+      {
+        "order": 2,
+        "name": "setAlgoParam",
+        "params": [
+          2,
+          15
+        ]
+      },
+      {
+        "order": 3,
+        "name": "submitToMarket"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "methods": [
+      {
+        "order": 0,
+        "name": "setAlgoParam",
+        "params": [
+          1,
+          90
+        ]
+      },
+      {
+        "order": 1,
+        "name": "setAlgoParam",
+        "params": [
+          2,
+          15
+        ]
+      },
+      {
+        "order": 2,
+        "name": "submitToMarket"
+      }
+    ]
+  }
+]

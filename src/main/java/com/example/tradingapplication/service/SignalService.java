@@ -15,7 +15,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
-import static org.apache.commons.collections4.CollectionUtils.isNotEmpty;
+import static org.springframework.util.CollectionUtils.isEmpty;
 
 
 @Service
@@ -43,10 +43,10 @@ public class SignalService implements SignalHandler {
     private void processSignal(Signal signal) {
         signal.getMethods().stream().sorted(Comparator.comparing(com.example.tradingapplication.model.Method::getOrder)).forEach(method -> {
             try {
-                if (isNotEmpty(method.getParams())) {
-                    processWithParams(method);
-                } else {
+                if (isEmpty(method.getParams())) {
                     processWithoutParams(method);
+                } else {
+                    processWithParams(method);
                 }
             } catch (NoSuchMethodException e) {
                 throw new ProcessSignalException("Method not found. signalId " + signal.getId() + " method " + method.getName());
