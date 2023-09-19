@@ -20,6 +20,6 @@ Code challenge from DeutchBank
 * Improvements
   * Change the api /signal-controller/createSignal, to upload a file
   * Implement cache mechanism, REDIS might be a good idea
-  * Implement migration DB, possible choices
+  * Implement migration DB Tool, possible choices
     * Liquibase MongoDB
     * Mongock
