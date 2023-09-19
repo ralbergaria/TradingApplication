@@ -12,9 +12,9 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 public class SignalDTO {
-    @NotNull
+    @NotNull(message = "Id can not be null")
     private Integer id;
-    @NotNull
-    @NotEmpty
+    @NotNull(message = "Methods can not be null")
+    @NotEmpty(message = "Methods can not be empty")
     private List<MethodDTO> methods;
 }

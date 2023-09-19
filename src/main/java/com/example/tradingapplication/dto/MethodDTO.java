@@ -12,10 +12,9 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 public class MethodDTO {
-    @NotNull
+    @NotNull(message = "Method order can not be null")
     private Integer order;
-    @NotEmpty
+    @NotEmpty(message = "Method name can not be empty")
     private String name;
-    @NotEmpty
     private List<Integer> params;
 }

@@ -1,0 +1,11 @@
+[
+  {
+    "id" : 1,
+    "methods" : [
+      {
+        "order" : 0,
+        "name" : "doAlgo"
+      }
+    ]
+  }
+]

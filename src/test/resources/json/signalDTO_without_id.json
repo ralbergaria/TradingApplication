@@ -1,0 +1,11 @@
+[
+  {
+    "methods" : [
+      {
+        "order" : 0,
+        "name" : "doAlgo",
+        "params" : [1,2]
+      }
+    ]
+  }
+]
