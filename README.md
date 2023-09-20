@@ -10,9 +10,10 @@ Code challenge from DeutchBank
         * http://localhost:8080/v3/api-docs
     * Spring Security
 * To run it
-    * Go to the directory /TradingApplication
-        * Run ./gradlew build
-        * Run ./gradlew run
+  * Make sure do you have Docker installed 
+  * Go to the directory /TradingApplication
+      * Run ./gradlew build
+      * Run ./gradlew run
 * Setup MongoDB project
    * Go to swagger http://localhost:8080/swagger-ui/index.html#/
    * Authorize using the API-Key `109353c6-6432-4acf-8e77-ef842f64a664`
